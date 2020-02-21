@@ -1,1 +1,65 @@
 // Navigation code here
+
+.nav {
+    height: 12vh;
+    background-color: @nav-bg;
+    border: @nav-border 2px solid;
+    padding: 1%;
+
+    div {
+        width: 100%
+    }
+    .sw {
+        height: 80%;
+        width: 100%;
+        .centerFlex();
+        
+        @media @phone {
+            height: 75%;
+        }
+        
+         h1 {
+            font-size: 4rem;
+            margin-bottom: 2%;
+            @media @phone {
+                font-size: 4.5rem;
+                
+            }
+        }
+    }
+    
+    .links {
+        height: 20%;
+        font-family: @nav-font;
+        font-size: 2rem;
+       
+        nav {
+            widows: 100%;
+            .centerFlex();
+
+            a {
+                text-decoration: none;
+                color: @nav-font;
+                margin: 0 1.5%;
+                &:hover {
+                    color: @main-border-color;
+                    background-color: @nav-font;
+                    font-weight: bold;
+                    transition: 1.3s;
+                }
+
+                @media @phone {
+                    margin: 0 2.5%;
+                    &:hover {
+                        color: @main-border-color;
+                        background-color: @nav-font;
+                        font-weight: bold;
+                        transition: 1.3s;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

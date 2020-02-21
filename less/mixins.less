@@ -1,1 +1,23 @@
 // Mixins Here
+
+.centerFlex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button(@h,@w){
+    font-size:1.7rem;
+    border-radius: 0.5rem;
+    background-color: @ebony-clay;
+    color:white;    
+    height:@h;
+    width:@w;
+    .centerFlex();
+    &:hover {
+        background-color: @main-font-color;
+        color: black;
+        font-weight: bold;
+        transition: 1.5s;
+    }
+}
