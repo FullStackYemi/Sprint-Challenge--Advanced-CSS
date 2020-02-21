@@ -1,14 +1,15 @@
 // Navigation code here
 
-.nav{
+.nav {
     height:12vh;
     background-color: @nav-bg;
     border: @nav-border 2px solid;
     padding: 1%;
-    div{
+
+    div {
         width:100%
     }
-    .sw{
+    .sw {
         height:80%;
         width: 100%;
         .centerFlex();
@@ -17,7 +18,7 @@
             height:75%;
         }
         
-         h1{
+         h1 {
             font-size: 4rem;
             margin-bottom: 2%;
             @media @phone {
@@ -27,21 +28,23 @@
         }
     }
     
-    .links{
+    .links {
         height:20%;
         font-family: @nav-font;
         font-size: 2rem;
        
-        nav{
+        nav {
             widows: 100%;
             .centerFlex();
-            a{
+
+            a {
                 text-decoration: none;
                 color: @nav-font;
                 margin:0 1.5%;
+
                 @media @phone {
-                margin:0 2.5%;               
-            }
+                    margin:0 2.5%;
+                }
 
             }
         }
