@@ -41,9 +41,21 @@
                 text-decoration: none;
                 color: @nav-font;
                 margin: 0 1.5%;
+                &:hover {
+                    color: @main-border-color;
+                    background-color: @nav-font;
+                    font-weight: bold;
+                    transition: 1.3s;
+                }
 
                 @media @phone {
                     margin: 0 2.5%;
+                    &:hover {
+                        color: @main-border-color;
+                        background-color: @nav-font;
+                        font-weight: bold;
+                        transition: 1.3s;
+                    }
                 }
 
             }

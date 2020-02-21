@@ -206,9 +206,21 @@ p {
   color: #454A59;
   margin: 0 1.5%;
 }
+.nav .links nav a:hover {
+  color: #dee2e6;
+  background-color: #454A59;
+  font-weight: bold;
+  transition: 1.3s;
+}
 @media (max-width: 500px) {
   .nav .links nav a {
     margin: 0 2.5%;
+  }
+  .nav .links nav a:hover {
+    color: #dee2e6;
+    background-color: #454A59;
+    font-weight: bold;
+    transition: 1.3s;
   }
 }
 footer {
@@ -306,6 +318,12 @@ footer {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #5E6164;
+  color: black;
+  font-weight: bold;
+  transition: 1.5s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
