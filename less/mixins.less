@@ -1,1 +1,17 @@
 // Mixins Here
+
+.centerFlex(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button(@w,@h){
+    font-size:1.6rem;
+    border-radius: .5rem;
+    background-color: @ebony-clay;
+    color:white;    
+    height:@h;
+    width:@w;
+    .centerFlex();
+}
